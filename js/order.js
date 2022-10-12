@@ -1,0 +1,5 @@
+ORDERLIST = [];
+
+function clearOrder(){
+    ORDERLIST = [];
+}
