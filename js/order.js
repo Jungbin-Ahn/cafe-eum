@@ -1,5 +1,0 @@
-ORDERLIST = [];
-
-function clearOrder(){
-    ORDERLIST = [];
-}

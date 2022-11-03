@@ -11,9 +11,12 @@
 
 <body>
     <div class="header">
-        <img src="resource/Microsoft_Excel_2013-2019_logo.svg.png" />
-        <img src="resource/image0.png" />
-        <img src="resource/512px-Google_Drive_icon_(2020).svg.png" />
+        <span></span>
+         <img src="resource/image0.png" />
+        <div class="clockbox">
+            <h2 id="date"></h2>
+            <h2 id="time"></h2>
+        </div>
     </div>
     <div class="menu">
         <span>1</span>
@@ -23,14 +26,27 @@
         <span>5</span>
         <span>6</span>
     </div>
-    <div class="order-section">
-        <ul class="order"></ul>
-        <ul class="calculator"></ul>
-    </div>
-    <script src="js/order.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/menu.js"></script>
+    <div class="order">
+        <h1>ORDER</h1>
+        <div class="order-list"></div>
+        <div class="result">
+            <span>Total: </span>
+            <span>Paid: </span>
+            <span>잔돈: </span>
+            <div>
+                <label for="payee">Order for: </label>
+                <input id='payee' type="text">
+                <select id="">
+                    <option value="현금">현금</option>
+                    <option value="달란트">달란트</option>
+                </select>
+            </div>
 
+        </div>
+
+    </div>
+    <script src="js/menu.js"></script>
+    <script src="js/clock.js"></script>
 </body>
 
 </html>

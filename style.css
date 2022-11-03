@@ -1,5 +1,77 @@
-body{
-    background-color: aliceblue;
-    height: 100vh;
-    width: 100vw;
+body {
+  background-color: grey;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  top: 0;
+  left: 0;
+  height: 10%;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header img {
+  height: 250%;
+  width: 13%;
+}
+
+.menu {
+  position: fixed;
+  width: 65%;
+  height: 70%;
+  top: 10%;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  grid-template-rows: repeat(2, 200px);
+  gap: 30px;
+  padding: 50px;
+}
+.menu span {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-image: url("resource/512px-Google_Drive_icon_\(2020\).svg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 2px solid white;
+}
+.order {
+  position: fixed;
+  top: 10%;
+  left: 70%;
+  width: 27%;
+  height: 75%;
+  background-color: yellow;
+  padding: 30px;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr 7fr 3fr;
+  gap: 5px;
+}
+.order h1 {
+  text-align: center;
+  font-size: 40px;
+}
+.order-list {
+  border: 2px solid black;
+  padding: 10px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: max-content;
+  gap: 20px;
+}
+
+.result {
+  border: 2px solid black;
+  display: grid;
+  padding: 10px;
 }
